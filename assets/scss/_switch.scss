@@ -1,0 +1,112 @@
+
+.switch-rounded {
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 32px;
+  margin-left: auto;
+  input {
+    display:none;
+  }
+}
+
+.switch-rounded__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+  border: 2px solid #CFD0E5;
+  &:hover {
+    border-color: #00A877;
+    &::before {
+      background-color: #00A877;
+    }
+  }
+  &:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #9697B2;
+    -webkit-transition: .2s;
+    transition: .2s;
+    border-radius: 50%;
+  }
+}
+
+input:checked + .switch-rounded__slider {
+  border-color: #00A877;
+}
+
+input:focus + .switch-rounded__slider {
+
+}
+
+input:checked + .switch-rounded__slider:before {
+  -webkit-transform: translateX(32px);
+  -ms-transform: translateX(32px);
+  transform: translateX(32px);
+  background-color: #00A877;
+}
+input:checked + .switch-rounded__slider:hover {
+  border-color: #00c68c;
+  &::before {
+    background-color: #00c68c;
+  }
+}
+
+.label_switch > .label__name {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+}
+
+.label__name-hint {
+  margin-top: 5px;
+  font-weight: normal;
+  color: #9697B2;
+}
+
+@media (max-width: 726px) {
+  .label_switch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .input-wrapper_switch {
+    width: initial;
+    margin-top: 12px;
+  }
+  .label_switch > .label__name {
+    margin-top:0;
+    margin-right: 5px;
+  }
+
+}
+
+@media (max-width: 425px) {
+  .switch-rounded {
+    width: 48px;
+    height: 24px;
+  }
+  .switch-rounded__slider {
+    &:before {
+      height: 16px;
+      width: 16px;
+    }
+  }
+  input:checked + .switch-rounded__slider:before {
+    -webkit-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    transform: translateX(24px);
+    background-color: #00A877;
+  }
+}

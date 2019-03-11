@@ -1,0 +1,33 @@
+$desktop-font-size: 16px;
+$mobile-font-size: 14px;
+$element-color: #6d73e0;
+$text-color: #6b8199;
+$link-color: #4e54c8;
+$link-color-hover: #545acd;
+$font-family: Roboto, sans-serif;
+
+//px to em function
+@function em($pixels, $context: $desktop-font-size) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1em;
+}
+
+//px to rem function
+@function rem($pixels, $context: $desktop-font-size) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1rem;
+}

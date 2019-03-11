@@ -1,0 +1,60 @@
+//<span class="input-wrapper">
+//  <span class="label-wrapper label">
+//  <label class="social-checkbox">
+//    <input type="checkbox">
+//    <span class="social-checkbox__icon"></span>
+//  </label>
+//  </span>
+//</span>
+.social-checkbox {
+  display: inline-block;
+  position: relative;
+  padding-left: 21px;
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;
+  font-weight: normal;
+  color: #9697B2;
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  input[type=checkbox] {
+    display: none;
+  }
+}
+
+.social-checkbox__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+}
+
+.social-checkbox__icon-viber {
+  background-image: url("/img/svg/social_viber-disable.svg");
+}
+
+.social-checkbox__icon-telegram {
+  background-image: url("/img/svg/social_telegram-disable.svg");
+}
+
+.social-checkbox__icon-whatsapp {
+  background-image: url("/img/svg/social_whatsapp-disable.svg");
+}
+
+.social-checkbox input:checked ~ .social-checkbox__icon-viber, .social-checkbox:hover input ~ .social-checkbox__icon-viber {
+  background-image: url("/img/svg/social_viber-active.svg");
+}
+
+.social-checkbox input:checked ~ .social-checkbox__icon-telegram, .social-checkbox:hover input ~ .social-checkbox__icon-telegram {
+  background-image: url("/img/svg/social_telegram-active.svg");
+}
+
+.social-checkbox input:checked ~ .social-checkbox__icon-whatsapp, .social-checkbox:hover input ~ .social-checkbox__icon-whatsapp {
+  background-image: url("/img/svg/social_whatsapp-active.svg");
+}
+
+.social-checkbox input:checked ~ .social-checkbox__text, .social-checkbox:hover input ~ .social-checkbox__text {
+  color:black;
+}

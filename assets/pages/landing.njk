@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/fotorama.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/landing.js"></script>
+    <script type="text/javascript" src="js/fotorama.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/imask"></script>
+</head>
+<body>
+	
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__logo">
+				<a href="/" class="logo-link">
+					<img src="/img/svg/logo.svg" width="400" class="logo">
+				</a>
+				<div class="header__contacts">
+					<a href="tel:89095413232" class="header__phone">8-909-541-3232</a>
+					<button class="btn btn-primary header__btn">Написать</button>
+				</div>
+			</div>
+			<div class="header-user">
+				<img src="/img/man-landing.jpg" class="header-user__image">
+				<div class="header-user__about">
+					<p>Здравствуйте! Я ваш риелтор</p>
+
+					<p class="header-user__name">Константинопольский Константин Константинович</p>
+
+					<p>Если вас заинтересует представленная недвижимость</p>
+					<br>
+					<p>
+						<a href="#" class="yellow write-me">Напишите мне прямо на сайте</a>
+					</p>
+					<br>
+					<p>Звоните или пишите в Whatsapp, Viber, Telegram</p>
+
+					<p class="header-user__phone">8-909-541-3232 </p>
+
+					<br>
+					<div>
+						Я в соц. сетях:
+						<a href="#" target="_blank" class="link yellow header-user__social-link"><img class="header-user__social-img" src="/img/svg/social_vk.svg"></a>
+						<div class="header-user__social-wrap">
+							<a href="#" target="_blank" class="link yellow header-user__social-link">Text</a>
+						</div>
+						<a href="#" target="_blank" class="link yellow header-user__social-link"><img class="header-user__social-img" src="/img/svg/social_fb.svg"></a>
+						<a href="#" target="_blank" class="link yellow header-user__social-link"><img class="header-user__social-img" src="/img/svg/social_instagram.svg"></a>
+					</div>
+
+					<br>
+					<p>Пишите на электронную почту</p>
+					<p>
+						<a href="mailto:konstantinopolsky@crm-r.ru" class="yellow">konstantinopolsky@crm-r.ru</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<div class="wrapper">
+
+			<div class="switch">
+				<div class="switch__item switch__item_active" data-tab="1">
+					Продажа
+					<span class="switch__count switch__count_green">
+						135
+					</span>
+				</div>
+				<div class="switch__item" data-tab="2">
+					Аренда
+					<span class="switch__count">
+						5
+					</span>
+				</div>
+			</div>
+
+			<div class="switchable-content switchable-content_1 switchable-content_active">
+				
+				<div class="object object_close">
+					<div class="object__state-close">
+						<div class="object__image" style="background-image: url(/img/flat.jpg);"></div>
+						<div class="object__container">
+							<div class="object__title link">2-к квартира, 80 м², 7 из 19 этаж</div>
+							<div class="object__price">3 000 000 ₽</div>
+							<div class="object__address">Сочи, переулок Николая Островского, 22</div>
+							<div class="object__note">Свободная продажа, ипотека</div>
+						</div>
+					</div>
+					<div class="object__state-open">
+						<div class="object__title link">2-к квартира, 80 м², 7 из 19 этаж</div>
+
+						<div class="object__address">Сочи, переулок Николая Островского, 22 <span class="object__onmap link">Показать на карте</span></div>
+
+						<div class="object__wrap">
+							<div class="object__main">
+								<div class="object__photos fotorama"
+									data-swipe="true"
+									data-allowfullscreen="native"
+									data-nav="thumbs"
+									data-thumbwidth="120px"
+									data-thumbheight="120px"
+									data-ratio="800/480"
+				                 	data-loop="false"
+				                 	data-width="100%"
+				                 	data-height="auto"
+				                 	data-max-height="480px"
+				                 	data-fit="cover">
+                                    
+                                    <a href="/img/img-profile.jpg">
+				                        <img src="/img/img-profile.jpg" class="object-photo">
+				                    </a>
+                                    <a href="/img/img-profile.jpg">
+				                        <img src="/img/img-profile.jpg" class="object-photo">
+				                    </a>
+                                	<a href="/img/img-profile.jpg">
+				                        <img src="/img/img-profile.jpg" class="object-photo">
+				                    </a>
+                                    <a href="/img/img-profile.jpg">
+				                        <img src="/img/img-profile.jpg" class="object-photo">
+				                    </a>
+	                            </div>
+
+	                            <div class="object-section">
+									<div class="object-section__name">Описание</div>
+									<div class="object-section__content">Продаётся прекрасная теплая квартира в качественном кирпичном доме в центре города. У дома огороженная территория с автоматическими воротами, индивидуальными парковочными местами и системой видео наблюдения, местами хранения колясок, велосипедов, авто шин. Рядом обширно развитая инфраструктура, остановки всех видов общественного транспорта, детские сады, школы, магазины, рынки, спортивные и медицинские центры. Центр города в шаговой доступности!</div>
+								</div>
+
+								<div class="object-section">
+									<div class="object-section__name">Цена и условия сделки</div>
+									<div class="object-section__content">
+										<div class="object-param">
+											<div class="object-param__key">Цена</div>
+											<div class="object-param__value">6 000 000 ₽</div>
+										</div>
+										<div class="object-param">
+											<div class="object-param__key">Комиссия</div>
+											<div class="object-param__value">10%</div>
+										</div>
+										<div class="object-param">
+											<div class="object-param__key">Тип продажи</div>
+											<div class="object-param__value">Свободная</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="object-section">
+									<div class="object-section__name">Дом</div>
+									<div class="object-section__content object-section__content_2col">
+										<div class="object-param">
+											<div class="object-param__key">Материал для очень длинных стен</div>
+											<div class="object-param__value">Кирпичный отличный двоичный разричный приличный</div>
+										</div>
+										<div class="object-param">
+											<div class="object-param__key">Тип дома</div>
+											<div class="object-param__value">Новостройка</div>
+										</div>
+										<div class="object-param">
+											<div class="object-param__key">Этаж</div>
+											<div class="object-param__value">7 из 19</div>
+										</div>
+										<div class="object-param">
+											<div class="object-param__key">Парковка</div>
+											<div class="object-param__value">Охраняемая</div>
+										</div>
+										<div class="object-param">
+											<div class="object-param__key">Лифт</div>
+											<div class="object-param__value">Есть</div>
+										</div>
+										<div class="object-param">
+											<div class="object-param__key">Мусоропровод</div>
+											<div class="object-param__value">Есть</div>
+										</div>
+										<div class="object-param">
+											<div class="object-param__key">Охрана или консьерж</div>
+											<div class="object-param__value">Есть</div>
+										</div>
+										<div class="object-param">
+											<div class="object-param__key">Закрытая территория</div>
+											<div class="object-param__value">Нет</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="object__aside">
+								<div class="object__price">3 000 000 ₽</div>
+								<div class="object__note">Свободная продажа, ипотека</div>
+								<button class="btn btn-blue object__write-realtor" data-object-id="20">Написать риелтору</button>
+								<div class="object__phones">
+									<div class="object__phones-item">
+										<div class="object__socials">
+											<div class="object__social object__social_viber"></div>
+											<div class="object__social object__social_telegram"></div>
+											<div class="object__social object__social_whatsapp"></div>
+										</div>
+										<div class="object__phone">8-909-541-3232</div>
+									</div>
+									<div class="object__phones-item">
+										<div class="object__socials">
+											<div class="object__social object__social_viber"></div>
+											<div class="object__social object__social_telegram"></div>
+											<div class="object__social object__social_whatsapp"></div>
+										</div>
+										<div class="object__phone">8-909-541-3232</div>
+									</div>
+								</div>
+								<span class="link order-call" data-object-id="20">заказать звонок</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="object object_close">
+					<div class="object__state-close">
+						<div class="object__image object__image_empty"></div>
+						<div class="object__container">
+							<div class="object__title link">2-к квартира, 80 м², 7 из 19 этаж</div>
+							<div class="object__price">3 000 000 ₽</div>
+							<div class="object__address">Сочи, переулок Николая Островского, 22</div>
+							<div class="object__note">Свободная продажа, ипотека</div>
+						</div>
+					</div>
+					<div class="object__state-open">
+						<div class="object__title link">2-к квартира, 80 м², 7 из 19 этаж</div>
+
+						<div class="object__address">Сочи, переулок Николая Островского, 22 <span class="object__onmap link">Показать на карте</span></div>
+
+						<div class="object__wrap">
+							<div class="object__main">
+								<div class="object__photos fotorama"
+									data-swipe="true"
+									data-allowfullscreen="native"
+									data-nav="thumbs"
+									data-thumbwidth="120px"
+									data-thumbheight="120px"
+				                 	data-loop="false"
+				                 	data-width="100%"
+				                 	data-height="auto"
+				                 	data-max-height="480px"
+				                 	data-fit="cover">
+                                    
+                                    <a href="/img/img-profile.jpg">
+				                        <img src="/img/img-profile.jpg" class="object-photo">
+				                    </a>
+                                    <a href="/img/img-profile.jpg">
+				                        <img src="/img/img-profile.jpg" class="object-photo">
+				                    </a>
+                                	<a href="/img/img-profile.jpg">
+				                        <img src="/img/img-profile.jpg" class="object-photo">
+				                    </a>
+                                    <a href="/img/img-profile.jpg">
+				                        <img src="/img/img-profile.jpg" class="object-photo">
+				                    </a>
+	                            </div>
+
+	                            <div class="object-section">
+									<div class="object-section__name">Описание</div>
+									<div class="object-section__content">Продаётся прекрасная теплая квартира в качественном кирпичном доме в центре города. У дома огороженная территория с автоматическими воротами, индивидуальными парковочными местами и системой видео наблюдения, местами хранения колясок, велосипедов, авто шин. Рядом обширно развитая инфраструктура, остановки всех видов общественного транспорта, детские сады, школы, магазины, рынки, спортивные и медицинские центры. Центр города в шаговой доступности!</div>
+								</div>
+
+								<div class="object-section">
+									<div class="object-section__name">Цена и условия сделки</div>
+									<div class="object-section__content">
+										<div class="object-param">
+											<div class="object-param__key">Цена</div>
+											<div class="object-param__value">6 000 000 ₽</div>
+										</div>
+										<div class="object-param">
+											<div class="object-param__key">Комиссия</div>
+											<div class="object-param__value">10%</div>
+										</div>
+										<div class="object-param">
+											<div class="object-param__key">Тип продажи</div>
+											<div class="object-param__value">Свободная</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="object-section">
+									<div class="object-section__name">Дом</div>
+									<div class="object-section__content object-section__content_2col">
+										<div class="object-param">
+											<div class="object-param__key">Материал для очень длинных стен</div>
+											<div class="object-param__value">Кирпичный отличный двоичный разричный приличный</div>
+										</div>
+										<div class="object-param">
+											<div class="object-param__key">Тип дома</div>
+											<div class="object-param__value">Новостройка</div>
+										</div>
+										<div class="object-param">
+											<div class="object-param__key">Этаж</div>
+											<div class="object-param__value">7 из 19</div>
+										</div>
+										<div class="object-param">
+											<div class="object-param__key">Парковка</div>
+											<div class="object-param__value">Охраняемая</div>
+										</div>
+										<div class="object-param">
+											<div class="object-param__key">Лифт</div>
+											<div class="object-param__value">Есть</div>
+										</div>
+										<div class="object-param">
+											<div class="object-param__key">Мусоропровод</div>
+											<div class="object-param__value">Есть</div>
+										</div>
+										<div class="object-param">
+											<div class="object-param__key">Охрана или консьерж</div>
+											<div class="object-param__value">Есть</div>
+										</div>
+										<div class="object-param">
+											<div class="object-param__key">Закрытая территория</div>
+											<div class="object-param__value">Нет</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="object__aside">
+								<div class="object__price">3 000 000 ₽</div>
+								<div class="object__note">Свободная продажа, ипотека</div>
+								<button class="btn btn-blue object__write-realtor" data-object-id="21">Написать риелтору</button>
+								<div class="object__phones">
+									<div class="object__phones-item">
+										<div class="object__socials">
+											<div class="object__social object__social_viber"></div>
+											<div class="object__social object__social_telegram"></div>
+											<div class="object__social object__social_whatsapp"></div>
+										</div>
+										<div class="object__phone">8-909-541-3232</div>
+									</div>
+									<div class="object__phones-item">
+										<div class="object__socials">
+											<div class="object__social object__social_viber"></div>
+											<div class="object__social object__social_telegram"></div>
+											<div class="object__social object__social_whatsapp"></div>
+										</div>
+										<div class="object__phone">8-909-541-3232</div>
+									</div>
+								</div>
+								<span class="link order-call" data-object-id="21">заказать звонок</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="object object_close">
+					<div class="object__state-close">
+						<div class="object__image" style="background-image: url(/img/flat.jpg);"></div>
+						<div class="object__container">
+							<div class="object__title link">2-к квартира, 80 м², 7 из 19 этаж</div>
+							<div class="object__price">3 000 000 ₽</div>
+							<div class="object__address">Сочи, переулок Николая Островского, 22</div>
+							<div class="object__note">Свободная продажа, ипотека</div>
+						</div>
+					</div>
+					<div class="object__state-open">
+						<div class="object__title link">2-к квартира, 80 м², 7 из 19 этаж</div>
+
+						<div class="object__address">Сочи, переулок Николая Островского, 22 <span class="object__onmap link">Показать на карте</span></div>
+
+						<div class="object__wrap">
+							<div class="object__main">
+								<div class="object__photos fotorama"
+									data-swipe="true"
+									data-allowfullscreen="native"
+									data-nav="thumbs"
+									data-thumbwidth="120px"
+									data-thumbheight="120px"
+				                 	data-loop="false"
+				                 	data-width="100%"
+				                 	data-height="auto"
+				                 	data-max-height="480px"
+				                 	data-fit="cover">
+                                    
+                                    <a href="/img/img-profile.jpg">
+				                        <img src="/img/img-profile.jpg" class="object-photo">
+				                    </a>
+                                    <a href="/img/img-profile.jpg">
+				                        <img src="/img/img-profile.jpg" class="object-photo">
+				                    </a>
+                                	<a href="/img/img-profile.jpg">
+				                        <img src="/img/img-profile.jpg" class="object-photo">
+				                    </a>
+                                    <a href="/img/img-profile.jpg">
+				                        <img src="/img/img-profile.jpg" class="object-photo">
+				                    </a>
+	                            </div>
+
+	                            <div class="object-section">
+									<div class="object-section__name">Описание</div>
+									<div class="object-section__content">Продаётся прекрасная теплая квартира в качественном кирпичном доме в центре города. У дома огороженная территория с автоматическими воротами, индивидуальными парковочными местами и системой видео наблюдения, местами хранения колясок, велосипедов, авто шин. Рядом обширно развитая инфраструктура, остановки всех видов общественного транспорта, детские сады, школы, магазины, рынки, спортивные и медицинские центры. Центр города в шаговой доступности!</div>
+								</div>
+
+								<div class="object-section">
+									<div class="object-section__name">Цена и условия сделки</div>
+									<div class="object-section__content">
+										<div class="object-param">
+											<div class="object-param__key">Цена</div>
+											<div class="object-param__value">6 000 000 ₽</div>
+										</div>
+										<div class="object-param">
+											<div class="object-param__key">Комиссия</div>
+											<div class="object-param__value">10%</div>
+										</div>
+										<div class="object-param">
+											<div class="object-param__key">Тип продажи</div>
+											<div class="object-param__value">Свободная</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="object-section">
+									<div class="object-section__name">Дом</div>
+									<div class="object-section__content object-section__content_2col">
+										<div class="object-param">
+											<div class="object-param__key">Материал для очень длинных стен</div>
+											<div class="object-param__value">Кирпичный отличный двоичный разричный приличный</div>
+										</div>
+										<div class="object-param">
+											<div class="object-param__key">Тип дома</div>
+											<div class="object-param__value">Новостройка</div>
+										</div>
+										<div class="object-param">
+											<div class="object-param__key">Этаж</div>
+											<div class="object-param__value">7 из 19</div>
+										</div>
+										<div class="object-param">
+											<div class="object-param__key">Парковка</div>
+											<div class="object-param__value">Охраняемая</div>
+										</div>
+										<div class="object-param">
+											<div class="object-param__key">Лифт</div>
+											<div class="object-param__value">Есть</div>
+										</div>
+										<div class="object-param">
+											<div class="object-param__key">Мусоропровод</div>
+											<div class="object-param__value">Есть</div>
+										</div>
+										<div class="object-param">
+											<div class="object-param__key">Охрана или консьерж</div>
+											<div class="object-param__value">Есть</div>
+										</div>
+										<div class="object-param">
+											<div class="object-param__key">Закрытая территория</div>
+											<div class="object-param__value">Нет</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="object__aside">
+								<div class="object__price">3 000 000 ₽</div>
+								<div class="object__note">Свободная продажа, ипотека</div>
+								<button class="btn btn-blue object__write-realtor" data-object-id="22">Написать риелтору</button>
+								<div class="object__phones">
+									<div class="object__phones-item">
+										<div class="object__socials">
+											<div class="object__social object__social_viber"></div>
+											<div class="object__social object__social_telegram"></div>
+											<div class="object__social object__social_whatsapp"></div>
+										</div>
+										<div class="object__phone">8-909-541-3232</div>
+									</div>
+									<div class="object__phones-item">
+										<div class="object__socials">
+											<div class="object__social object__social_viber"></div>
+											<div class="object__social object__social_telegram"></div>
+											<div class="object__social object__social_whatsapp"></div>
+										</div>
+										<div class="object__phone">8-909-541-3232</div>
+									</div>
+								</div>
+								<span class="link order-call" data-object-id="22">заказать звонок</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="switchable-content switchable-content_2 ">hello</div>
+
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="wrapper">
+			<p class="footer__copyright"><strong>©Realty-crm, 2018.</strong> Этот сайт создан с помощью Realty-crm. По всем вопросам <a href="mailto:info@crm-r.ru">info@crm-r.ru</a></p>
+			<p class="footer__made-in">Сделано на <a href="/"><img src="/img/svg/logo-footer.svg" width="400" class="footer__logo"></a></p>
+		</div>
+	</footer>
+
+	<div class="modal modal-realtor">
+		<div class="modal__container">
+			<div class="modal__title">Написать риелтору</div>
+			<button class="modal__close">
+	            <svg width="20" height="20">
+	                <use xlink:href="#icn-close"></use>
+	            </svg>
+	        </button>
+			<div class="modal__content">
+				<div class="modal__result">Сообщение успешно отправлено</div>
+				<label class="label">
+					<div class="label__name">Ваше имя</div>
+					<input type="text" name="name" class="input">
+				</label>
+				<label class="label">
+					<div class="label__name">Ваш телефон</div>
+					<input type="tel" name="phone" class="input">
+				</label>
+				<label class="label">
+					<div class="label__name">Сообщение</div>
+					<textarea name="message" class="input textarea"></textarea>
+				</label>
+				<input type="hidden" name="objectId" class="modal__objectId">
+				<button class="btn btn-blue">Отправить заявку</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal-call">
+		<div class="modal__container">
+			<div class="modal__title">Заказать звонок</div>
+			<button class="modal__close">
+	            <svg width="20" height="20">
+	                <use xlink:href="#icn-close"></use>
+	            </svg>
+	        </button>
+			<div class="modal__content">
+				<div class="modal__result">Сообщение успешно отправлено</div>
+				<label class="label">
+					<div class="label__name">Ваше имя</div>
+					<input type="text" name="name" class="input">
+				</label>
+				<label class="label">
+					<div class="label__name">Ваш телефон</div>
+					<input type="tel" name="phone" class="input">
+				</label>
+				<input type="hidden" name="objectId" class="modal__objectId">
+				<button class="btn btn-blue">Отправить заявку</button>
+			</div>
+		</div>
+	</div>
+
+	<div style="display: none;">
+	{% include "../templates/main/svg-sprite.njk" %}
+	</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{% macro breadcrumbs(previous, current) %}
+<div class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+            <a href="/" class="link">Главная</a>
+        </li>
+        {% for item in previous %}
+        <li class="breadcrumbs__item">
+            <a href="#" class="link">{{ item }}</a>
+        </li>
+        {% endfor %}
+        <li class="breadcrumbs__item">{{ current }}</li>
+    </ul>
+</div>
+{% endmacro %}
