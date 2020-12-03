@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+{% include "../templates/main/RealtyCRM/head-login.njk" %}
+<body>	
+	<!-- import from header.njk -->
+	{% include "../templates/main/RealtyCRM/header_rev.njk" %}		
+	<div class="wrapper">
+	
+		<main class="inver reg">
+			<!-- content! -->
+			<div class="column">
+				<p class = "title">Регистрация</p>
+				<p class="text">
+					<font color="red"><b>ВНИМАНИЕ!</b></font> Ваша почта и номер телефона, указанный при регистрации, не должны быть зарегистрированны
+				</p>
+			</div>
+			<div class="column">
+				<form class="form">
+					<label class="label city">
+						<input type="text" name="city" class="input city_state" placeholder="Город" required>
+						<span class="help">Укажите ваш город</span>
+						<ul class="drop">
+							<li><a href="#">Москва</a></li>
+							<li><a href="#">Сочи</a></li>
+							<li><a href="#">Краснодар</a></li>
+						</ul>
+						
+					</label>
+
+					<div class = 'flex_row'>
+						<label class="label">
+							<input type="text" name="last_name" class="input last_name" placeholder="Фамилия" required>
+							<span class="help">Введите ваше имя и фамилию</span>
+						</label>
+					
+						<label class="label">
+							<input type="text" name="name" class="input name" placeholder="Имя" required>
+						</label>
+							
+					</div>
+
+					<label class="label">
+						<input type="email" name="email" class="input mail" placeholder="Электронная почта" required>
+						<span class="help">Введите свой адрес электронной почты</span>
+					</label>
+
+					<label class="label">
+						<input type="text" name="phone" class="input tel" placeholder="Телефон">
+					</label>
+
+					<div class = 'flex_row'>
+						<label class="label">
+							<input type="password" name="password" class="input pass new_pass" placeholder="Пароль" required>
+							<span class="help">Введите пароль</span>
+						</label>
+
+						<label class="label">
+							<input type="password" name="password" class="input conf_new_pass" placeholder="Подтверждение пароля">
+							<span class="help">Пароль не совпадает</span>
+						</label>
+					</div>
+
+					<label class="container">
+						<input type="checkbox" class = "checkbox">
+						<span class="checkmark"></span>
+						<p class="checked">Normal</p>
+						<span class = "help">Подтвердите ваше согласие на условия использования сервиса</span>
+					</label>
+
+					<label class="container">
+						<input type="checkbox" class = "checkbox">
+						<span class="checkmark"></span>
+						<p class="checked">Normal</p>
+						<span class = "help">Подтвердите ваше согласие на условия использования сервиса</span>
+					</label>
+
+					<div class="row">
+						<div class="column">
+							<button class="button submit">Зарегистрироваться</button>
+							<button class="button">Войти</button>
+						</div>
+
+					</div>
+				</form>
+			</div>
+
+		</main>	
+
+		<aside class="inverse">
+			<!-- only for desktop version-->
+		</aside>	
+
+
+	</div>
+		<!-- import from footer.njk -->
+		{% include "../templates/main/RealtyCRM/footer_rev.njk" %}
+
+</body>
+</html>

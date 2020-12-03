@@ -41,7 +41,7 @@ const paths = {
   imgFolder: siteOutput + '/img/',
   iconsFolder: siteOutput + '/img/icons',
   fonts: siteOutput + '/fonts/*',
-  css: '../web/css/',
+  css: siteOutput + '/css/',
   pages: siteOutput + '/pages/**/*.njk',
   templates: siteOutput + '/templates/**/*.njk',
   build: '../web/'
@@ -117,18 +117,7 @@ gulp.task('ftp-deploy', ['sass', 'nunjucks'], function () {
 gulp.task('sass', function () {
 
   gulp.src([
-    './assets/scss/balance.scss',
-    './assets/scss/history.scss',
-    './assets/scss/list-pdf.scss',
-    './assets/scss/landing.scss',
-    './assets/scss/pdf.scss',
-    './assets/scss/login.scss',
-    './assets/scss/error.scss',
-    './assets/scss/main.scss',
-    './assets/scss/object.scss',
-    './assets/scss/objects.scss',
-    './assets/scss/contacts.scss',
-    './assets/scss/main.scss'
+    './assets/scss/sign_in.scss',
   ])
     .pipe(plumber())
     .pipe(sass.sync().on('error', sass.logError))

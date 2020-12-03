@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+{% include "../templates/main/RealtyCRM/head-login.njk" %}
+<body>
+	<!-- import from header.njk -->
+	{% include "../templates/main/RealtyCRM/header.njk" %}
+
+	<div class="wrapper">
+		<main>
+			<!-- content! -->
+			<div class="column">
+				<p class = "title">Вход</p>
+				<p class="text">Добро пожаловать, пожалуйста, войдите в свой аккаунт.</p>
+			</div>
+			<div class="column">
+				<form class="form">
+					<label class="label">
+						<input type="email" name="email" class="input mail" placeholder="Электронная почта" required>
+						<span class="help">Введите свой адрес электронной почты</span>
+					</label>
+
+					<label class="label">
+						<input type="password" name="password" class="input pass" placeholder="Пароль" required>
+						<span class="help">Введите пароль</span>
+					</label>
+
+					<div class="row">
+						
+						<div class="column forget">
+							<a href="/" class="form-link">Забыли пароль?</a>
+						</div>
+
+						<div class="column">
+							<button class="button submit">Войти</button>
+							<button class="button">Зарегистрироваться</button>
+						</div>
+
+					</div>
+				</form>
+			</div>
+
+		</main>
+		<aside>
+		</aside>	
+
+	</div>	
+
+
+	{% include "../templates/main/RealtyCRM/footer.njk" %}	
+
+
+
+
+
+</body>
+</html>

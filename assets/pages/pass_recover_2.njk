@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+{% include "../templates/main/RealtyCRM/head-login.njk" %}
+<body>
+		<!-- import from header.njk -->
+	{% include "../templates/main/RealtyCRM/header.njk" %}	
+	<div class="wrapper">	
+	
+		<main>
+			<!-- content! -->
+			<div class="column">
+				<p class = "title">Восстановление пароля</p>
+				<p class="text">Ссылка для восстановления пароля отправлена на почту <a href="mailto:realtyemail@mail.ru">realtyemail@mail</a></p>
+				<p class="text">Войдите в свой аккаунт, если вспомнили пароль</p>
+			</div>
+			<div class="column">
+				<form class="form">
+					<div class="row">
+						<div class="column">
+							<button class="button mob">Войти</button>
+							<button class="button desk">Вход</button>
+						</div>
+
+					</div>
+				</form>
+			</div>
+
+		</main>
+	<aside>
+		<!-- only for desktop version-->
+	</aside>	
+
+	</div>
+
+		<!-- import from footer.njk -->
+	{% include "../templates/main/RealtyCRM/footer.njk" %}
+
+</body>
+</html>
